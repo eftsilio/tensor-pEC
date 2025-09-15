@@ -1,0 +1,18 @@
+%------- Event Hierarchy -------%
+
+% dependency(_ToBeComputedFirst, _Target).
+hierarchy(withinArea, true, nearPorts, 1).
+hierarchy(withinArea, true, nearCoast, 1).
+hierarchy(withinArea, true, nearCoast5k, 1).
+hierarchy(withinArea, true, fishing, 1).
+hierarchy(gap, nearPorts, 1).
+hierarchy(gap, farFromPorts, 1).
+hierarchy(stopped, nearPorts, 1).
+hierarchy(stopped, farFromPorts, 1).
+hierarchy(lowSpeed, true, 1).
+hierarchy(changingSpeed, true, 1).
+hierarchy(highSpeedNearCoast, true, 1).
+hierarchy(movingSpeed, below, 1).
+hierarchy(movingSpeed, above, 1).
+hierarchy(movingSpeed, normal, 1).
+hierarchy(tuggingSpeed, true, 1).

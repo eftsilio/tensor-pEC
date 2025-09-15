@@ -1,0 +1,9 @@
+%------- Event Hierarchy -------%
+
+% dependency(_ToBeComputedFirst, _Target).
+hierarchy(person, true, 1).
+hierarchy(fighting, true, 2).
+hierarchy(meeting, true, 2).
+hierarchy(moving, true, 2).
+hierarchy(leaving_object, true, 2).
+
